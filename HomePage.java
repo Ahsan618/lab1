@@ -19,19 +19,19 @@ public class HomePage extends JFrame {
     public HomePage() {
         // Setting up the frame
         setTitle("Home - Premium FITNESS ");
-        setSize(1200, 800); // Increased size for better visibility
+        setSize(1500, 700); // Increased size for better visibility
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(true); // Allow resizing
 
         // Main panel
         JPanel panel = new JPanel(new BorderLayout());
-        panel.setBackground(Color.WHITE);
+        panel.setBackground(Color.RED);
         add(panel);
 
         // Header panel
         JPanel headerPanel = new JPanel(new BorderLayout());
-        headerPanel.setBackground(new Color(0xF98866)); // Salmon pink
+        headerPanel.setBackground(new Color(0xF98866)); // green
         panel.add(headerPanel, BorderLayout.NORTH);
 
         // Logo (scaled down with rounded border)
@@ -45,7 +45,7 @@ public class HomePage extends JFrame {
 
         // Header label (Black text color)
         JLabel headerLabel = new JLabel("HOME - PREMIUM FITNESS GYM", SwingConstants.CENTER);
-        headerLabel.setFont(new Font("Arial", Font.BOLD, 32)); // Larger font size
+        headerLabel.setFont(new Font("Arial", Font.BOLD, 54)); // Larger font size
         headerLabel.setForeground(Color.BLACK); // Text color changed to black
         headerPanel.add(headerLabel, BorderLayout.CENTER);
 
